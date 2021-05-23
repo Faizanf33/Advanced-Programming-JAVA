@@ -1,4 +1,3 @@
-
 public class MainClass{
     static int sum = 0;
 
@@ -16,10 +15,26 @@ public class MainClass{
         obj3.start();
         
         obj1.join();
+        
         Runnable runnable = ()->{
             for (int i = 1; i <= 10; i++) {
                 sum += i;                
-            }
+            }        // state obj = new state();
+            // obj.st = true;
+            // obj.position = new double[]{71.199, 123.21};
+            
+            
+            // // save to file
+            // try {
+            //     String fileString = "output.txt";
+            //     ObjectOutputStream objOutputStream = new ObjectOutputStream(new FileOutputStream(fileString));
+            //     objOutputStream.writeObject(obj);
+            //     objOutputStream.close();
+    
+            // } catch (Exception e) {
+            //     System.err.println(e);
+            // }
+    
         };
         
         Thread thread = new Thread(runnable);
