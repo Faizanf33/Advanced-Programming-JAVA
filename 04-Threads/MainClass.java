@@ -1,4 +1,4 @@
-public class MainClass{
+public class MainClass {
     static int sum = 0;
 
     public static void main(String[] args) throws InterruptedException {
