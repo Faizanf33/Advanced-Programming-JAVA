@@ -15,6 +15,10 @@ public class BankAccount {
         this.ID = ID;
     }
 
+    public int getId() {
+        return this.ID;
+    } 
+
     synchronized void deposit(double balance) {
         lock1.lock();
         this.balance += balance;
