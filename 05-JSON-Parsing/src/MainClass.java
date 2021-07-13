@@ -43,7 +43,7 @@ public class MainClass {
                 System.out.println(name + " passed with " + marks + " marks");
 
             else
-                System.out.println(name + " passed with " + marks + " marks");
+                System.out.println(name + " failed with " + marks + " marks");
         });
 
     }
